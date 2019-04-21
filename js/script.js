@@ -22,7 +22,7 @@ function getBrown(){
   .then((res) => res.json())
   .then((data) => {
     const filtered = data.body.data.filter(furniture => furniture.colors.includes("brown"));
-    let output = '<h2>Tan Furniture</h2>';
+    let output = '<h2>Furniture available in brown:</h2>';
     filtered.forEach(function(furniture){
       output += `
         <div>
@@ -42,7 +42,7 @@ function getTan(){
   .then((res) => res.json())
   .then((data) => {
     const filtered = data.body.data.filter(furniture => furniture.colors.includes("tan"));
-    let output = '<h2>Tan Furniture</h2>';
+    let output = '<h2>Furniture available in tan:</h2>';
     filtered.forEach(function(furniture){
       output += `
         <div>
@@ -62,7 +62,7 @@ function getRed(){
   .then((res) => res.json())
   .then((data) => {
     const filtered = data.body.data.filter(furniture => furniture.colors.includes("red"));
-    let output = '<h2>Tan Furniture</h2>';
+    let output = '<h2>Furniture available in red:</h2>';
     filtered.forEach(function(furniture){
       output += `
         <div>
